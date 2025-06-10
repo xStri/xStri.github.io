@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aiden's Portfolio</title>
+    
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body id="root"> 
+
+    <div id="topbar">
+        <h2>Aiden's Portfolio</h2>
+        <img class="pfp" src="works/blender/characters/side-profile.png">
+
+        <h3>
+            (Screen Names: xStri / Aidnyaan)
+        </h3>
+        <h3>
+            A small website I made to document & showcase the most interesting creations I've produced in my free time.
+        </h3>
+
+        <button type="button" onClick="document.getElementById('blendercontent').scrollIntoView();">3D Works</button>
+        <button type="button" onClick="document.getElementById('devcontent').scrollIntoView();">Game Dev</button>
+    </div>
+
+    <div id="blendercontent">
+        <h4>3D Art & Animations</h4>
+
+        <p class="flavor">
+            Almost all of my models feature low to mid-poly triangle counts, as well as normal mapping.
+            This makes them highly suitable for use in game development.
+        </p>
+
+        <div id="chars" class="gallery">
+            <h5>Original Character Models</h5>
+
+            <div class="entry">  
+                <img src="works/blender/characters/pamella.png">
+                <p> A render of one of my original characters, Pamella. </p>
+            </div>
+
+            <div class="entry">  
+                <video src="works/blender/characters/pam-run-cycle.mp4"></video>
+                <p>
+                    Pamella's run cycle.
+                </p>
+            </div>
+
+            <div class="entry">
+                <img src="works/blender/characters/scorching-scallywag.png">
+                <p>
+                    Render of another original character I made. This one's themed around fire, 
+                    and likes to down entire bottles of hot sauce for fun.
+                </p>
+            </div>
+
+            <div class="entry">
+                <img src="works/blender/characters/acacia-alley.png">
+                <p>"Acacia"</p>
+            </div>
+
+            <div class="entry">
+                <img src="works/blender/characters/forest-catboy.png">
+                <p>It's my persona!</p>
+            </div>
+            <div class="entry">
+                <img src="works/blender/characters/cat-test.png">
+                <p>"Test - Catboy Archery"</p>
+            </div>
+
+            <div class="entry">  
+                <img src="works/blender/characters/stygia.png">
+                <p> 
+                    An anthropomorphized version of the real-life animal "Stygiomedusa Gigantea", 
+                    more commonly known as the Giant Phantom Jellyfish.
+                </p>
+            </div>
+
+            <div class="entry">  
+                <video src="works/blender/characters/stygiomedusa-turntable.mp4"></video>
+                <p>
+                    Animated render. I also made the choice to add glowing spikes to the model 
+                    to spice up the character design; driving the shape keys with bones for ease of
+                    animation.
+                </p>
+            </div>
+
+            <div class="entry">
+                <img src="works/blender/characters/spectrel-fakemon.png">
+                <p>
+                    My submission for an art contest where several artists had to submit their own "fakémon" 
+                    (Original creature designs inspired by Pokémon). My name for this one is "Spectrelsius", a portmanteau of "Spectre" and "Celsius".
+                </p>
+            </div>
+            <div class="entry">
+                <video src="works/blender/characters/spectrel-run-cycle.mp4"></video>
+                <p>Run cycle for Spectrelsius.</p>
+            </div>
+        </div>
+        
+        <div id="envs" class="gallery">
+            <h5>Environments</h5>
+            
+            <div class="entry">  
+                <img src="works/blender/environments/party-venue.png">
+                <p>An underground party venue.</p>
+            </div>
+
+            <div class="entry">  
+                <img src="works/blender/environments/dark-forest.png">
+                <p>A simple "dark forest" environment I did for a personal project.</p>
+            </div>
+
+            <div class="entry">  
+                <img src="works/blender/environments/outer-park.png">
+                <p>
+                    A WIP environment depicting an autumn outdoor park. <br>
+                    Features material blending between the soil and concrete / tree bark.
+                </p>
+            </div>
+        </div>
+
+        <div id="props" class="gallery">
+            <h5>Small Props / Objects</h5>
+            <div class="entry">  
+                <video src="works/blender/objects/small-turning-fan.mp4"></video>
+                <p>An animated, small turning fan prop. (520 triangles)</p>
+            </div>
+
+            <div class="entry">  
+                <img src="works/blender/objects/monstera-plant.png">
+                <p>A potted monstera plant. (840 triangles) </p>
+            </div>
+
+            <div class="entry">  
+                <img src="works/blender/objects/boombox.png">
+                <p>A simple, stylized boombox. (174 triangles) </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="devcontent">
+        <h4 style="color:rgb(148, 238, 193)">Development Screenshots</h4>
+
+        <p class="flavor">
+            Roblox Studio is how I first got into game dev. I've been using it for over 10 years, so 
+            I have a deep familiarity with the syntax of the Lua programming language. <br>
+            Since then I've moved to primarily using the Godot game engine for my game dev projects.
+        </p>
+
+        <div id="godot" class="gallery halfcolumn"> 
+            <h5>Godot Development</h5>
+
+            <div class="entry">  
+                <img src="works/godot/godot-devscreenshot1.png">
+                <p> 
+                    An in-engine screenshot of the hub area for my primary personal game dev project, Counter Clash. <br>
+                    Depicts a small cafeteria-styled restaurant, featuring parallax occlusion mapping to simulate the 
+                    appearance of 3D floor tiles using only textures.
+                </p>
+            </div>
+            <div class="entry">  
+                <img src="works/godot/godot-devscreenshot2.png">
+                <p>
+                    In-engine screenshot of the underground party venue from earlier, used as a stage in Counter Clash.
+                    This angle shows off a small pool and a water shader with caustics.
+                </p>
+            </div>
+            <div class="entry">  
+                <img src="works/godot/godot-devscreenshot3.png">
+                <p>
+                    Development screenshot of another Counter Clash stage, this one depicting a small, just-moved-into room with boxes in the corner. 
+                    Central to it is a desk with art supplies, a computer, and various trinkets littered about.
+                </p>
+            </div>
+        </div>
+
+        <div id="roblox" class="gallery halfcolumn"> 
+            <h5>Roblox Development</h5>
+
+            <div class="entry">  
+                <video src="works/roblox/roblox-movement-climbing.mov"></video>
+                <p>
+                    Gameplay clip of a secondary game development project of mine. This showcases the "anti-gravity" feature of a 
+                    movement system I've been creating, as well as climbing mechanics working in conjunction with it.
+                </p>
+            </div>
+
+            <div class="entry">  
+                <video src="works/roblox/roblox-movement-gravity.mov"></video>
+                <p>
+                    Another clip from the same project. Showcases some more anti-gravity, as well as terminal velocity / skydiving.
+                </p>
+            </div>
+            
+            <div class="entry">  
+                <video src="works/roblox/roblox-movement-watersphere.mov"></video>
+                <p>
+                    This one shows off the anti-gravity working in conjunction with character buoyancy physics, allowing the player to 
+                    seamlessly swim on a spherical "water planet".
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullsize-bg" class="fullsize bg shown hidden"></div>
+
+    <img id="full-img" class="fullsize shown hidden">
+    <video id="full-vid" class="fullsize shown hidden" muted autoplay loop controls></video>
+
+    <p class="flavor">so yeah, tldr *please hire me*</p>
+</body>
+
+<script src="index.js"></script>
+
+</html>

@@ -124,8 +124,7 @@ h5 {
     margin-right: auto;
 
     border-radius: 999px;
-    box-shadow: 0 0 16px 4px rgba(211 211, 211, 0.28);
-    -moz-box-shadow: 0 0 16px 4px rgba(211 211, 211, 0.28);
+    box-shadow: 0 0 16px 4px rgba(211, 211, 211, 0.3);
 }
 
 

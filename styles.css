@@ -32,11 +32,11 @@ h2 {
 h3 {
     color: white;
     text-shadow: 2px 2px 16px rgba(2, 2, 2, 0.56);
+    font-size: 1.5vmin;
     
     width:64%;
-    font-size: 1.5vmin;
-
-    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
@@ -119,11 +119,13 @@ h5 {
     width: 18vmin;
     height: auto;
 
-    display: grid;
-    justify-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     border-radius: 999px;
     box-shadow: 0 0 16px 4px rgba(211 211, 211, 0.28);
+    -moz-box-shadow: 0 0 16px 4px rgba(211 211, 211, 0.28);
 }
 
 

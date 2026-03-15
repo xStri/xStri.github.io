@@ -90,3 +90,9 @@ galleryEntries.forEach(
         }
     }
 );
+
+
+// Interactive Renders
+
+import * as DynamicRenders from "./dynamic_renders.js"
+DynamicRenders.renderGLTF(document.getElementById('3-bird'), 'works/blender/objects/bird.glb', 0.2)

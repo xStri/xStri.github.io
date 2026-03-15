@@ -18,7 +18,18 @@ body {
 }
 
 
-/* Header Styles */
+#three-canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+}
+
+
+/* Headers */
 
 h2 {
     color: white;
@@ -158,7 +169,7 @@ h5 {
 }
 
 
-.entry {
+.entry, .threeview {
     border-radius: 32px;
     height: 64vmin;
     max-width: 100%;
@@ -174,7 +185,7 @@ h5 {
     overflow: hidden;
 }
 
-.entry:hover {
+.entry:hover, .threeview:hover {
     background-color: rgba(255, 255, 255, 0.28);
     box-shadow: 0 0 16px 8px rgba(255, 255, 255, 0.8);
     transform: scale(1.025);
@@ -186,8 +197,7 @@ h5 {
     }
 }
 
-
-.entry p {
+.entry p, .threeview p {
     font-family: Exo;
     font-size: 14px;
     color: hsla(0, 0%, 100%, 0.848);
@@ -204,7 +214,7 @@ h5 {
     transition: 250ms;
 }
 
-.entry p::before {
+.entry p::before, .threeview p::before {
     content: '';
     background-color: rgba(248, 248, 248, 0.25);
     width: 120%;
@@ -214,6 +224,19 @@ h5 {
     transform: translate(-50%, -5%);
     top: 5%;
     left: 50%;
+}
+
+
+.threeview {
+    background-color: rgba(97, 95, 107, 0.0);
+    height: 50vmin;
+    aspect-ratio: 1;
+    max-width: 100%;
+}
+
+.threeview:hover {
+    background-color: rgba(97, 95, 107, 0.0);
+    /* box-shadow: 0 0 4px 4px rgba(66, 65, 71, 0.479); */
 }
 
 
@@ -295,7 +318,6 @@ p.button:hover {
     background-color: rgba(255, 255, 255, 0.08);
 }
 
-/* For fading in/out, used in index.js */
 
 .shown {
     opacity: 1;
